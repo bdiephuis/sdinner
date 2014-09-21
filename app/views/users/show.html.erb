@@ -1,0 +1,34 @@
+
+<div class="row">
+  <div class="span6 offset3">
+  <h2> Date preferences for <%= @user.email %> </h2>
+  Available on 
+  <%
+  txt_output = ""
+	if @user.mon == true
+  txt_output += 'Monday '
+	end
+	if @user.tues == true
+  txt_output += 'Tuesday '
+	end
+	if @user.wed == true
+  txt_output += 'Wednesday '
+	end
+	if @user.thurs == true
+  txt_output += 'Thursday '
+	end
+	if @user.fri == true
+  txt_output += 'Friday '
+	end
+	if @user.sat == true
+  txt_output += 'Saturday '
+	end
+	if @user.sun == true
+  txt_output += 'Sunday '
+	end
+
+	%>
+
+	<%= txt_output %>
+  </div>
+</div>

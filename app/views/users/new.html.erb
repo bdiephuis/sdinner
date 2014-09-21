@@ -1,0 +1,36 @@
+<h1>Section G Small Group Dinner Signup</h1>
+<p> Check off all available dates</p>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@user) do |f| %>
+
+      <%= f.label :mon %>
+      <%= f.check_box :mon %>
+
+      <%= f.label :tues %>
+      <%= f.check_box :tues %>
+
+      <%= f.label :wed %>
+      <%= f.check_box :wed %>
+
+      <%= f.label :thurs %>
+      <%= f.check_box :thurs %>
+
+      <%= f.label :fri %>
+      <%= f.check_box :fri %>
+
+      <%= f.label :sat %>
+      <%= f.check_box :sat %>
+
+      <%= f.label :sun %>
+      <%= f.check_box :sun %>
+<p>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+
+      <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
